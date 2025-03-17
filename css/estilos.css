@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+
+main{
+    width: 55%;
+}
+
+aside{
+    background-color: #79EBD5;
+    width: 45%;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.body{
+    background-color: #092439;
+    height: 75%;
+}
