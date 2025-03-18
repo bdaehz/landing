@@ -11,6 +11,10 @@ aside{
     width: 45%;
 }
 
+.align-center{
+    align-items: center;
+}
+
 .flex{
     display: flex;
 }
@@ -19,8 +23,35 @@ aside{
     flex-direction: column;
 }
 
+.flex-top{
+    justify-content: flex-start;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
 .flex-end{
     justify-content: flex-end;
+}
+
+.height-25{
+    height: 25%;
+}
+
+.foto{
+    border-radius: 50%;
+    background-color: #79EBD5;
+    width: 140px;
+    height: 140px;
+}
+
+.margin-20{
+    margin:20px;
+}
+
+.p10{
+    padding: 10px;
 }
 
 .body{
