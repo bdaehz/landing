@@ -11,6 +11,7 @@ aside{
     background-color: #79EBD5;
     color: white;
     width: 45%;
+    height: 100%;
 }
 
 .align-center{
@@ -59,4 +60,25 @@ aside{
 .body{
     background-color: #092439;
     height: 75%;
+}
+
+.separador{
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    margin: 5px 0;
+}
+
+.decoracion{
+    width: 100%;
+    background-color: #000000;
+    height: 2px;
+    margin: 5px 0;
+}
+
+.circulo{
+    width: 15;
+    height: 15;
+    border: 2px solid #000000;
+    border-radius: 50%;
 }
