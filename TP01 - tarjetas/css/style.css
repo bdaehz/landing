@@ -7,24 +7,34 @@ body{
     align-items: center;
 }
 
+main{
+    display: flex;
+    width: 25vw;
+}
+
 .card{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    min-width: 400;
     justify-content: center;
-    width: fit-content;
     background-color: white;
+    border-radius: 15px;
     
 }
 
 .card-header{
+    padding: 1em 0;
     background-color: #F2F1F6;
-    padding: 1rem;
     gap: 1em;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
 
 h3{
@@ -46,4 +56,51 @@ h3{
     justify-content: center;
     color: #AFAFAF;
     gap: 5px;
+}
+
+.button-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55A79;
+    color: white;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: 60%;
+    box-shadow: 0 0 30px #F55A79;
+}
+
+.card-body{
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: #5CBEBF;
+    color: white;
+}
+
+a{
+    text-decoration: none;
 }
