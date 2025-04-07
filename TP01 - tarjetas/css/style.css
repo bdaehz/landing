@@ -2,13 +2,48 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: white;
+    
 }
 
 .card-header{
     background-color: #F2F1F6;
+    padding: 1rem;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #AFAFAF;
+    gap: 5px;
 }
