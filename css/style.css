@@ -1,0 +1,43 @@
+@import url(../assets/css/style.css);
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+}
+
+.card-header{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: blue;
+    color: white;
+}
+
+img{ 
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body{
+    color: black;
+}
