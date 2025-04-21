@@ -1,9 +1,17 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido{
+    display: flex;
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     width: 55%;
 }
 
@@ -81,4 +89,20 @@ aside{
     height: 15;
     border: 2px solid #000000;
     border-radius: 50%;
+}
+
+#volver{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    color: black;
+    margin: 5px;
+}
+
+#blanco{
+    background-color: white;
+}
+
+#blanco-circulo{
+    border: 2px solid white;
 }
