@@ -6,13 +6,13 @@ contenedorTexto.id = "texto";
 data = [
     tp_0 = [
         nombreProyecto = "Curriculum Vitae",
-        imagenProtecto = "./img/Portada tp 1 - cv.png",
+        imagenProtecto = "./img/portadas/Portada tp 1 - cv.png",
         descripcionProyecto = "Diseño del primer Curriculum vitae sin usar figma, tomado de referencia una imagen",
         href = "./TP00/index.html"
     ],
     tp_1 = [
         nombreProyecto = "Tarje Figma",
-        imagenProtecto = "./img/Portada tp 1 - cv.png",
+        imagenProtecto = "./img/portadas/Portada tp 1 - cv.png",
         descripcionProyecto = "Primer diseño hecho con figma donnde se aprendieron conceptos bascios de Figma. Despues se lo paso programo en css y html dando este resultado.",
         href = "./TP01 - tarjetas/index.html"
     ]
@@ -135,7 +135,7 @@ function mostrarProyectos(data){
     ruta.classList.add("carpeta");
 
     imgCarpeta = document.createElement("img");
-    imgCarpeta.src = "./img/carpeta-pixelart.png";
+    imgCarpeta.src = "./img/icons/carpeta-pixelart.png";
 
     nombreRuta = document.createElement("h1");
     nombreRuta.textContent = "Proyectos";
@@ -148,7 +148,7 @@ function mostrarProyectos(data){
     let contador = 0;
 
     data.forEach((informacion)=>{
-        
+
         let a = document.createElement("a");
         a.href = informacion[3];
 
