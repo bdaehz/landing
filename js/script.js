@@ -3,6 +3,26 @@ let contenedorTexto = document.createElement("div");
 contenedorTexto.classList.add("texto");
 contenedorTexto.id = "texto";
 
+data = [
+    tp_0 = [
+        nombreProyecto = "Curriculum Vitae",
+        imagenProtecto = "./img/Portada tp 1 - cv.png",
+        descripcionProyecto = "Diseño del primer Curriculum vitae sin usar figma, tomado de referencia una imagen",
+        href = "./TP00/index.html"
+    ],
+    tp_1 = [
+        nombreProyecto = "Tarje Figma",
+        imagenProtecto = "./img/Portada tp 1 - cv.png",
+        descripcionProyecto = "Primer diseño hecho con figma donnde se aprendieron conceptos bascios de Figma. Despues se lo paso programo en css y html dando este resultado.",
+        href = "./TP01 - tarjetas/index.html"
+    ]
+]
+
+
+data.forEach((info)=>{
+    console.log(info)
+})
+
 function animarLetrasTexto(texto, segundos) {
     contenedor.appendChild(contenedorTexto);
     return new Promise((resolve) => {
@@ -102,7 +122,7 @@ function desvanecerPantalla(){
     contenedor.classList.add("desvanecer");
 }
 
-function mostrarProyectos(){
+function mostrarProyectos(data){
 
     let proyectos = document.createElement("div");
     proyectos.classList.add("contenedor");
@@ -125,21 +145,34 @@ function mostrarProyectos(){
     let cards = document.createElement("div");
     cards.classList.add("proyectos");
 
-    let card = document.createElement("div");
-    card.classList.add("card");
+    let contador = 0;
 
-    let tituloCard = document.createElement("h1");
-    tituloCard.textContent = "hola";
+    data.forEach((informacion)=>{
+        
+        let a = document.createElement("a");
+        a.href = informacion[3];
 
-    let portadaCard = document.createElement("img");
-    portadaCard.src = "./img/Portada tp 1 - cv.png";
-    portadaCard.classList.add("portada");
+        let card = document.createElement("div");
+        card.classList.add("card");
+        
+        let tituloCard = document.createElement("h1");
+        tituloCard.textContent =  "Tp " + contador + " | " +  informacion[0];
+        
+        let portadaCard = document.createElement("img");
+        portadaCard.src = informacion[1];
+        portadaCard.classList.add("portada");
+        
+        let descripcionCard = document.createElement("h2");
+        descripcionCard.textContent = informacion[2];
+        
+        card.append(tituloCard, portadaCard, descripcionCard);
+        a.append(card);
+        cards.appendChild(a);
 
-    let descripcionCard = document.createElement("h2");
-    descripcionCard.textContent = "Este es mi curriculum vitae, donde podras ver mis habilidades y conocimientos.";
+        contador++;
+    });
+    
 
-    card.append(tituloCard, portadaCard, descripcionCard);
-    cards.appendChild(card);
 
     proyectos.append(menu, cards);
 
@@ -179,18 +212,16 @@ async function animacion(){
     main.classList.add("aparecer");
     main.classList.add("centrar");
     body.classList.add("centrar");
-    body.classList.add("h-100")
+    body.classList.add("h-100");
     await animarLetrasTexto("hola bienvenido a mi portafolio!", 0.08);
     await animarLetrasTexto("Soy Cristian Cabral de 7mo 1ra", 0.08);
     contenedorTexto.classList.add("mover-arriba");
     body.classList.remove("h-100");
     body.classList.remove("centrar");
     setTimeout(() => {
-        mostrarProyectos();
+        mostrarProyectos(data);
         contenedorTexto.classList.remove("mover-arriba");
     }, 2000);
-    setTimeout(async () => {
-    }, 3000);
 }
 
 animacion()
