@@ -13,8 +13,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     gap: 30px;
+}
+
+#body2{
+    background-color: var(--color-1);
 }
 
 main{
@@ -25,12 +29,13 @@ main{
 }
 
 #logo{
-    width: 30px;
-    height: 40px;
+    width: auto;
+    height: 50px;
 }
 
 header{
     display: flex;
+    align-items: center;
     gap: 20px;
     width: 100%;
 }
@@ -88,11 +93,16 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: calc(100vw - 15px * 6);
+    width: calc(100vw - 13px * 7);
     background-color: var(--color-1);
     padding: 15px;
     gap: 10px;
     border-radius: 5px;
+}
+
+#electrecidad{
+    width: 25;
+    height: 25;;
 }
 
 .oferta{
@@ -112,6 +122,7 @@ h3{
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 20px;
 }
 
 .transacciones .text{
@@ -126,16 +137,82 @@ h3{
 }
 
 .transaccion-card{
-    width: 100%;
-    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
     background-color: var(--color-5);
     border-radius: 15px;
+    padding: 20px;
 }
 
 .transaccion-card img{
     width: 50px;
     height: 50px;
     border-radius: 10px;
+}
+
+.transaccion-card .user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    gap: 20px;
+}
+
+.transaccion-card .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+}
+
+nav{
+    position: sticky;
+    background-color: var(--color-5);
+    bottom: 0;
+    width: calc(100vw - 20px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px var(--color-3) solid;
+    padding-top: 10px;
+}
+
+nav svg{
+    width: 30px;
+    height: 30px;
+}
+
+nav:not(.seleccionado){
+    color: var(--color-4);
+}
+
+.resaltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: var(--color-2);
+    color: var(--color-5);
+}
+
+h1{
+    font-size: clamp(1.875rem, 1.5179rem + 1.4286vw, 3.125rem);
+}
+
+h2{
+    font-size: clamp(1.5625rem, 1.2946rem + 1.0714vw, 2.5rem);
+}
+
+h3{
+    font-size: clamp(0.9375rem, 0.6696rem + 1.0714vw, 1.875rem);
+}
+
+#plata{
+    font-size: clamp(1.5625rem, 1.3839rem + 0.7143vw, 2.1875rem);
 }
 
 @media screen and (orientation: portrait) {
