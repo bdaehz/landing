@@ -19,6 +19,7 @@ body{
 
 #body2{
     background-color: var(--color-1);
+    padding: 5vw 5vw 0 5vw;
 }
 
 main{
@@ -26,6 +27,18 @@ main{
     flex-direction: column;
     gap: 30px;
     width: 100%;
+}
+
+#person{
+    width: 60%;
+    min-width: 300px;
+}
+
+#main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
 }
 
 #logo{
@@ -93,7 +106,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: calc(100vw - 13px * 7);
+    width: calc(100vw - 15px * 7);
     background-color: var(--color-1);
     padding: 15px;
     gap: 10px;
@@ -209,10 +222,31 @@ h2{
 
 h3{
     font-size: clamp(0.9375rem, 0.6696rem + 1.0714vw, 1.875rem);
+    text-align: center;
 }
 
 #plata{
     font-size: clamp(1.5625rem, 1.3839rem + 0.7143vw, 2.1875rem);
+}
+
+.pagado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+#back{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#separador{
+    width: 100%;
 }
 
 @media screen and (orientation: portrait) {
