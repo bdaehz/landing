@@ -109,7 +109,7 @@ h3{
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: var(--color-1);
-    min-width: 310px;
+    min-width: 338px;
     width: calc(100vw - 15px * 7);
     padding: 15px;
     gap: 10px;
